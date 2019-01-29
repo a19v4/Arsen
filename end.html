@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: arm;
+            src: url(font/arm.ttf);
+        }
+        *{margin:0;padding:0;}
+        section {width: 820px;height: 610px;position: relative;background:url("img/end_bg.png") no-repeat; background-size: cover;}
+        .cucanish {position:absolute; width: 331px;height: 470px;background: url("img/cucanish.png") no-repeat; background-size: cover;left: 67px;top: 47px;}
+        .qocucanishe {
+            position: absolute;
+            left: 251px;
+            top: 15px;
+            font-family: arm;
+            color: white;
+            font-size: 44px;
+        }
+        #playagain {
+            position: absolute;
+            width: 197px;
+            height: 48px;
+            background: url(img/krkinsksel.png) no-repeat;
+            background-size: cover;
+            right: 30px;
+            border: 0;
+            top: 47px;
+        }
+        #playagain:focus {outline: none;}
+        .patil {
+            height: 100vh;
+            position: absolute;
+            top: -630px;
+            animation-name: patil;
+        }
+        .patil2 {
+            height: 100vh;
+            position: absolute;
+            top: -630px;
+            animation-name: patil2;
+        }
+        .patil3 {
+            height: 100vh;
+            position: absolute;
+            top: -630px;
+            animation-name: patil3;
+        }
+        .anim{
+            animation-duration:40s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes patil {
+            0% {top: 0px;}
+            100% {top: 800px;}
+        }
+        @keyframes patil2{
+            0% {top:-630px;}
+            100% {top: 300px;}
+        }
+        @keyframes patil3{
+            0% {top:-1100px;}
+            100% {top: 0px;}
+        }
+        .foot {
+            position: absolute;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="img/patil.png" alt="" class="patil anim">
+    <img src="img/patil.png" alt="" class="patil2 anim">
+    <img src="img/patil.png" alt="" class="patil3 anim">
+    <button id='playagain'></button>
+    <div class="cucanish"><p class="qocucanishe">546</p></div>
+    <img src="img/foot.png" alt="" class="foot">
+</section>
+
+    <script>
+        $('#playagain').on('click',function () {
+            window.location.href = 'index.html';
+        });
+        function ss() {
+            var win_width = $(window).width();
+            var w = 820;
+            if(win_width <= 820){
+                var scale = win_width/w;
+                $('section').css({'transform':'scale('+scale+')','transform-origin':'left top'});
+            }
+        }
+        ss();
+    </script>
+</body>
+</html>

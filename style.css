@@ -1,0 +1,144 @@
+@font-face {
+    font-family: arm;
+    src: url(font/arm.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 820px;
+    height: 610px;
+    background: url("img/bg.png");
+    position: relative;
+    overflow: hidden;
+}
+
+.empty,.empty2 {
+    height: 89px;
+    width: 69px;
+    position: absolute;
+    display: inline-block;
+}
+#empty1{left: 79px;}
+#empty2{left: 158px;}
+#empty3 {left: 39px;top: 89px;}
+#empty4 {left: 120px;top: 89px;}
+#empty5 {left:0;top: 178px;}
+#empty6 {left: 79px;top: 178px;}
+#empty7 {left:158px;top: 178px}
+#empty8 {left: 39px;top: 267px}
+#empty9 {left: 120px;top: 267px}
+#empty10 {top: 356px;}
+#empty11 {left: 79px; top: 356px;}
+#empty12 {left: 158px; top: 356px;}
+#empty13 {left:39px;top: 445px;}
+#empty14 {left:120px;top: 445px;}
+
+.container {
+    width: 235px;
+    height: 537px;
+    left: 20px;
+    position: relative;
+}
+
+#empty20 {left: 224px;top: 60px;}
+#empty21 {left: 185px;top: 139px;}
+#empty22 {left: 274px;top: 165px;}
+#empty23 {left: 155px;top: 229px;}
+#empty24 {left: 237px;top: 261px;}
+#empty25 {left: 327px;top: 279px;}
+#empty26 {left: 142px;top: 329px;}
+#empty27 {left: 238px;top: 370px;}
+#empty28 {left: 349px;top: 402px;}
+#empty29 {left: 83px;top: 411px;}
+
+
+.center {
+    position: absolute;
+    width: 516px;
+    height: 610px;
+    background: url(img/tonacar.png) no-repeat;
+    background-size: cover;
+    right: 10px;
+}
+img {
+    height:89px;
+    width: 100%;
+}
+.treePhoto{
+    opacity: 0.6;
+}
+.foot {
+    position: absolute;
+    bottom:0;
+    height:75px;
+}
+
+.sc_tm {
+    width: 120px;
+    height: 112px;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-family: arm;
+    color: white;
+}
+.scor {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    font-size: 30px;
+}
+.level {
+    position: absolute;
+    right:30px;
+    top: 10px;
+    font-size: 30px;
+}
+.clock {
+    width: 45px;
+    height: 52px;
+    position: absolute;
+}
+.score {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    bottom: 0;
+}
+.patil {
+    height: 100vh;
+    position: absolute;
+    top: -630px;
+    animation-name: patil;
+}
+.patil2 {
+    height: 100vh;
+    position: absolute;
+    top: -630px;
+    animation-name: patil2;
+}
+.patil3 {
+    height: 100vh;
+    position: absolute;
+    top: -630px;
+    animation-name: patil3;
+}
+.anim{
+    animation-duration:60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes patil {
+    0% {top: -600px;}
+    100% {top: 800px;}
+}
+@keyframes patil2{
+    0% {top:-1100px;}
+    100% {top: 300px;}
+}
+@keyframes patil3{
+    0% {top:-1200px;}
+    100% {top: 0px;}
+}
